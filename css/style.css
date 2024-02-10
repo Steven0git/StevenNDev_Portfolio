@@ -76,7 +76,7 @@ h6 {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: #fff;
+  background:var(--color-white);
   transition: all 0.6s ease-out;
 }
 
@@ -88,9 +88,9 @@ h6 {
   border: 6px solid #fff;
   border-color: var(--color-success) transparent var(--color-sky-blue) transparent;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+  width: 90px;
+  height: 90px;
+  animation: animate-preloader 990ms linear infinite;
 }
 
 @keyframes animate-preloader {

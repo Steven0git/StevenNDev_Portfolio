@@ -1,2 +1,4 @@
 #ignore assets directory.
 assets/*
+script/declaration/*
+script/js/*
