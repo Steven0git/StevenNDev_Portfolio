@@ -6,6 +6,7 @@
   --color-gry:#a8a9b4;
   --color-red:#ed3c0d;
   --color-deep-blue:#1f5297;
+  --color-success: #198754;
 }
 
 
@@ -68,6 +69,40 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+/* Preloader*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #fff;
+  border-color: var(--color-success) transparent var(--color-sky-blue) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -312,6 +347,7 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  font-weight: 400;
 }
 
 .section-bg {

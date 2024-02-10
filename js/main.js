@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", ()=> {
 
+ const preloader = document.querySelector('#preloader');
+    if (preloader) {
+      window.addEventListener('load', () => {
+      preloader.remove();
+       AOS.init({
+      duration: 800,
+      easing: 'slide',
+      once: true,
+      mirror: false
+    });
+      });
+    }
+    
     /* Date Time Calculation */
       const elmCurrAge = document.querySelector("span#age");
       const elmBirthDate = document.querySelector("span#born");
