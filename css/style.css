@@ -8,6 +8,7 @@
   --color-deep-blue:#1f5297;
   --color-success: #198754;
 }
+ 
 
 
 /*--------------------------------------------------------------
@@ -17,6 +18,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
+ 
 
 a {
   color: var(--color-blue);
@@ -279,8 +281,9 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../assets/profile-bg.jpg") bottom center!important;
   background-size: cover;
+  background-repeat: space;
 }
 
 #hero:before {
@@ -351,7 +354,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--color-white);
 }
 
 .section-title {
@@ -364,7 +367,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--color-deep-blue);
 }
 
 .section-title h2::after {
