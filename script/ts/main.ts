@@ -22,7 +22,22 @@ class Website {
     window.addEventListener("load",()=> this.initAOS())
   }
   private DocumentDOM(){
-    document.addEventListener("DOMContentLoaded",()=>this.PureCounter())
+    document.addEventListener("DOMContentLoaded",()=>{
+      this.initPureCounter()
+      setTimeout(this.CheckCSS, 3000)
+      })
+  }
+  private CheckCSS(){
+    const styleSheets = document.querySelectorAll('link[rel="stylesheet"]');
+    let cssLoaded = false;
+    styleSheets.forEach(sheet => {
+        if (sheet.href) {
+            cssLoaded = true;
+        }
+    });
+    if (!cssLoaded) {
+        location.reload();
+    }
   }
 // Loader of the Page
   private initPreloader() {
