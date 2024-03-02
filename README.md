@@ -25,7 +25,7 @@ I hope this helps you craft a professional statement that effectively showcases 
 I'm always eager to collaborate on new projects, share knowledge, or simply network with fellow developers. Feel free to reach out using the contact information below:
 
 - Website: 
-- Email: pact.mail01@gmail.com
+- Email: steve.dev.business@proton.me
 - GitHub: https://github.com/Steven0git
 - LinkedIn: https://www.linkedin.com/in/steven-4410a32a6
 
