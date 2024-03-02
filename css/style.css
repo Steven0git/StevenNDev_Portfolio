@@ -203,11 +203,14 @@ h6 {
 .nav-menu {
   margin-top: 20px;
   padding: 30px 0 0 0;
-   
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .nav-menu:hover {
   transition: box-shadow ease-in-out 300ms;
+  transition: opacity ease-in-out 250ms;
+  opacity: 1;
 }
 
 .nav-menu * {
@@ -273,8 +276,12 @@ h6 {
   justify-content: center;
   line-height: 0;
   border-radius: 50px;
-  cursor: pointer;
-  
+  cursor: move;
+  opacity: 0.7;
+  transition: all ease-in-out 300ms;
+}
+.mobile-nav-toggle:hover{
+  opacity: 1;
 }
 
 .mobile-nav-active {
@@ -383,6 +390,39 @@ section {
   border: none;
 }
 
+.filter-blur {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  cursor: move;
+  transition: all ease-in-out 300ms;
+}
+
+.filter-blur:hover {
+  animation: 3 blurx 3s;
+}
+
+@keyframes blurx {
+  0% {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+  20% {
+    -webkit-filter: blur(.5px);
+    -webkit-filter: blur(.5px);
+    transform: rotate(10deg);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.0);
+  }
+  100% {
+    filter: none;
+    -webkit-filter: none;
+    transform: none;
+  }
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -606,6 +646,7 @@ section {
 /*portfolio Items */
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  transition: all ease-in-out 300ms;
 }
 
 .portfolio #portfolio-flters {
@@ -618,6 +659,13 @@ section {
   border-radius: 50px;
   padding: 2px 15px;
   box-shadow: var(--box-shadowless);
+  transition: opacity ease-in-out 250ms;
+  cursor: move;
+  opacity: 0.6;
+}
+
+.portfolio #portfolio-flters:hover{
+  opacity: 1;
 }
 
 .portfolio #portfolio-flters li {
