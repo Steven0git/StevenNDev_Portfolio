@@ -1,8 +1,8 @@
 /* Variables Declaration */ 
 :root {
-  --color-plain-text:rgba(255,255,255,0.4);
+  --color-plain-text:rgba(255,255,255,0.5);
   --color-sky-blue: #37b3ed;
-  --color-white: #fff;
+  --color-white: rgba(255,255,255,0.737);
   --color-black: rgb(30,33,38);
   --color-yellow:rgb(246,246,36);
   --color-light-purple:rgb(194,196,247);
@@ -203,12 +203,11 @@ h6 {
 .nav-menu {
   margin-top: 20px;
   padding: 30px 0 0 0;
-  box-shadow: var(--box-shadowless);
+   
 }
 
 .nav-menu:hover {
-  box-shadow: 1px 3px 1px var(--color-deep-blue);
-  transition: box-shadow ease-in-out 500ms;
+  transition: box-shadow ease-in-out 300ms;
 }
 
 .nav-menu * {
@@ -264,7 +263,7 @@ h6 {
   border: none;
   font-size: 24px;
   transition: all 0.4s;
-  outline: var(--color-yellow) 1px solid !important;
+  outline: var(--color-yellow) 1px groove !important;
   background-color: var(--color-black);
   color: var(--color-white);
   width: 40px;
@@ -294,6 +293,7 @@ section {
   border-top: 2px solid var(--color-deep-blue);
   box-shadow: var(--box-shadowless);
 }
+
 
 .section-bg {
   background: var(--color-black);
@@ -332,7 +332,7 @@ section {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../assets/profile-bg.jpg") bottom center!important;
+  background: url("../assets/bgx.JPG") bottom center!important;
   background-size: cover;
   background-repeat: space;
 }
@@ -378,6 +378,9 @@ section {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid var(--color-yellow);
+}
+.b-0 {
+  border: none;
 }
 
 @media (min-width: 1024px) {
